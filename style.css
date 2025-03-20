@@ -1,226 +1,738 @@
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1170px; /* Встановіть максимальну ширину контейнера для великого екрана */
-    max-height: 100%; /* Встановіть максимальну висоту контейнера на 100% */
-  }
+.header{
+    display: flex;
+    background-color: brown;
+    justify-content: center ;
+    font-size: 36px;
+    color: brown;
+    text-align: center;
 }
 
-/* global */
-.button {
-  border-radius: 5px; /* Задайте радіус для округлення країв кнопки */
-  background: var(
-    --Gardient,
-    linear-gradient(90deg, #2563eb 0.36%, #d946ef 201.02%)
-  ); /* Використовуйте градієнт для кнопки */
-  color: white; /* Задайте білий колір тексту */
+.img{
+    display: flex;
+    width: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    flex-direction: column;
 }
 
-.button a {
-  text-decoration: none; /* Видаліть підкреслення з посилання */
-  color: #f9fafb; /* Задайте світлий колір тексту посилання */
-  font-size: 14px; /* Встановіть розмір тексту 14px */
-  font-weight: 500; /* Встановіть напівжирний текст */
-  transition: 0.3s ease; /* Додайте плавний перехід при зміні стилю */
+.main{
+    display: flex;
+    flex-direction: column;
+    background-color: #f5e9d5;
+    margin: 1%;
+}
+.p{
+    font-size: 18px; /* Розмір шрифту для тексту */
+    color: brown; /* Колір тексту */
+    line-height: 1.6; /* Відстань між рядками */
+    max-width: 600px; /* Обмежуємо ширину для тексту */
+    margin: 20px auto; /* Відступи зверху та знизу */
 }
 
-.button a:hover {
-  color: #cacaca; /* Змініть колір тексту на світло-сірий при наведенні */
+.my-button {
+    background-color: #f5e9d5; /* Зеленый фон */
+    color: brown; /* Белый цвет текста */
+    padding: 15px 32px; /* Отступы (высота и ширина кнопки) */
+    text-align: center; /* Выравнивание текста по центру */
+    text-decoration: none; /* Убираем подчеркивание текста */
+    display: inline-block; /* Блоки по ширине контента */
+    font-size: 16px; /* Размер шрифта */
+    margin: 4px 2px; /* Отступы между кнопками */
+    cursor: pointer; /* Курсор при наведении */
+    border: none; /* Убираем границу */
+    border-radius: 8px; /* Скругляем углы кнопки */
+    transition: background-color 0.3s; /* Плавное изменение цвета фона при наведении */
+    justify-content: center;
 }
+
+/* Эффект при наведении */
+.my-button:hover {
+    background-color: white; /* Цвет фона при наведении */
+}
+
+.my-button-2 {
+    background-color: brown; /* Зеленый фон */
+    color: white; /* Белый цвет текста */
+    padding: 15px 32px; /* Отступы (высота и ширина кнопки) */
+    text-align: center; /* Выравнивание текста по центру */
+    text-decoration: none; /* Убираем подчеркивание текста */
+    display: inline-block; /* Блоки по ширине контента */
+    font-size: 16px; /* Размер шрифта */
+    margin: 4px 2px; /* Отступы между кнопками */
+    cursor: pointer; /* Курсор при наведении */
+    border: none; /* Убираем границу */
+    border-radius: 8px; /* Скругляем углы кнопки */
+    transition: background-color 0.3s; /* Плавное изменение цвета фона при наведении */
+}
+
+/* Эффект при наведении */
+.my-button-2:hover {
+    background-color: white; /* Цвет фона при наведении */
+}
+
+
+.my-button-3 {
+    background-color: brown; /* Зеленый фон */
+    color: white; /* Белый цвет текста */
+    padding: 15px 32px; /* Отступы (высота и ширина кнопки) */
+    text-align: center; /* Выравнивание текста по центру */
+    text-decoration: none; /* Убираем подчеркивание текста */
+    display: inline-block; /* Блоки по ширине контента */
+    font-size: 16px; /* Размер шрифта */
+    margin: 4px 2px; /* Отступы между кнопками */
+    cursor: pointer; /* Курсор при наведении */
+    border: none; /* Убираем границу */
+    border-radius: 8px; /* Скругляем углы кнопки */
+    transition: background-color 0.3s; /* Плавное изменение цвета фона при наведении */
+}
+
+/* Эффект при наведении */
+.my-button-3:hover {
+    background-color: white; /* Цвет фона при наведении */
+}
+
 
 body {
-  background: url(./img/global__bg.png); /* Задайте зображення фону */
-  background-repeat: no-repeat; /* Забороніть повторення фону */
-  background-size: cover; /* Задайте покриття всього екрану фоном */
-  background-position: center center; /* Вирівняйте фон по центру */
-  font-family: "DM Sans"; /* Встановіть шрифт для всього документа */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5e9d5;
+    margin: 0;
+    padding: 20px;
 }
 
 .container {
-  max-width: 1440px; /* Задайте максимальну ширину контейнера */
-  padding-left: 15px; /* Додайте внутрішній відступ зліва 15px */
-  padding-right: 15px; /* Додайте внутрішній відступ справа 15px */
-  margin: 0 auto; /* Вирівняйте контейнер по центру */
-  outline: 2px solid red; /* Задайте червону рамку для відладки */
+    background: white;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
-/* header */
+.africa{
+    display: flexf;
+    font-weight: bold;
+    font-size: large;
 
-header {
-  padding: 24px 0; /* Задайте внутрішній відступ зверху та знизу 24px */
 }
 
-.header-container {
-  display: flex; /* Використовуйте flex для розташування елементів */
-  justify-content: space-between; /* Розташуйте елементи на максимальній відстані */
+/* Заголовок */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.body{
+    background-color: #f5e9d5;
+
+}
+.header h1 {
+    color: #8b0000;
+    font-size: 24px;
+    margin-left: 100px;
 }
 
-.header-nav {
-  display: flex; /* Використовуйте flex для розташування навігації */
-  justify-content: center; /* Розташуйте навігаційні елементи по центру */
-  gap: 60px; /* Задайте відстань між елементами 60px */
+.header img {
+    width: 50px;
+    height: 50px;
 }
 
-.header-list {
-  display: flex; /* Використовуйте flex для списку елементів */
-  justify-content: center; /* Розташуйте елементи списку по центру */
-  gap: 60px; /* Додайте проміжок між елементами списку 60px */
+/* Кнопки */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
 }
 
-.header-item {
-  margin: 12px; /* Додайте зовнішній відступ для елементів списку */
+.button-container button {
+    background-color: #b22222;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-.header-link {
-  text-decoration: none; /* Видаліть підкреслення посилань */
-  color: #f9fafb; /* Задайте світлий колір для тексту */
-  font-size: 14px; /* Встановіть розмір тексту 14px */
-  font-weight: 500; /* Встановіть напівжирний шрифт */
-  transition: 0.3s ease; /* Додайте плавний перехід для стилів */
+.button-container button:hover {
+    background-color: #8b0000;
 }
 
-.header-link:hover {
-  color: #d946ef; /* Змініть колір тексту на рожевий при наведенні */
+/* Таблица */
+.table-container {
+    margin-top: 30px;
 }
 
-.header-button {
-  padding: 12px 24px; /* Додайте внутрішній відступ кнопки 12px зверху і 24px з боків */
-  line-height: 1.5; /* Встановіть міжрядковий інтервал 1.5 */
+.table-container h2 {
+    color: #8b0000;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
-/* start */
-
-.solution-container {
-  display: flex; /* Використовуйте flex для розташування елементів */
+.header{
+    background-color: #f5e9d5;
+}
+.box {
+    display: inline-block;
+    background: white;
+    padding: 10px 20px;
+    border: 2px solid brown;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 5px;
+    color: #8b0000;
 }
 
-.start-inner {
-  /* Залишено порожнім для додавання стилів у майбутньому */
+.box.center {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: fit-content;
 }
 
-.start-title {
-  background: -webkit-linear-gradient(90deg, #2563eb 0.11%, #d946ef 58.65%); /* Додайте градієнт до тексту */
-  -webkit-background-clip: text; /* Використовуйте кліпінг для тексту */
-  -webkit-text-fill-color: transparent; /* Зробіть текст прозорим */
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07); /* Додайте тінь до тексту */
-  font-size: 58px; /* Встановіть великий розмір тексту */
-  font-weight: 700; /* Використовуйте жирний текст */
-  line-height: 84px; /* Встановіть міжрядковий інтервал 84px */
-  letter-spacing: 1.16px; /* Додайте відстань між літерами */
-  margin-bottom: 32px; /* Додайте зовнішній відступ знизу 32px */
+.cs3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    gap: 20px;
 }
 
-.start-article {
-  color: #e5e7eb; /* Задайте светлый цвет текста */
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07); /* Добавьте тень к тексту */
-  font-size: 15px; /* Установите размер текста 15px */
-  font-weight: 500; /* Установите полужирный шрифт */
-  line-height: 30px; /* Установите межстрочный интервал 30px (200%) */
-  margin-bottom: 32px; /* Добавьте внешний отступ снизу 32px */
+.box-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.start-buttons {
-  display: flex; /* Используйте flex для размещения кнопок */
+.img1{
+    display: flex;
+    margin-right: 20px;
+    position: relative;
+    right: 465px;
 }
 
-.start-button {
-  padding: 12px 24px; /* Добавьте внутренние отступы 12px сверху и снизу, 24px по бокам */
-  margin-right: 32px; /* Добавьте отступ справа 32px */
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 30px;
+    font-size: 16px;
+    color: brown;
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
 }
 
-.start-button-video {
-  display: flex; /* Используйте flex для размещения элементов кнопки */
-  align-items: center; /* Выровняйте элементы по вертикали */
-  background: none; /* Установите прозрачный фон */
-  color: #f9fafb; /* Установите светлый цвет текста */
-  border: none; /* Уберите границы */
+.info-container p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
 }
 
-.start-button-video span {
-  margin-left: 10px; /* Добавьте отступ слева 10px */
-  font-size: 16px; /* Установите размер текста 16px */
-  font-weight: 500; /* Установите полужирный шрифт */
-  line-height: normal; /* Используйте стандартный межстрочный интервал */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-/* service */
-
-.service {
-  padding: 120px 0; /* Добавьте внутренние отступы сверху и снизу по 120px */
+.section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ccc;
+    width: 280px; /* Фиксированная ширина */
+    min-height: 500px; /* Фиксированная высота для выравнивания */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.service-title {
-  display: flex; /* Используйте flex для размещения заголовка */
-  justify-content: center; /* Выровняйте заголовок по центру */
-  color: #fff; /* Установите белый цвет текста */
-  font-size: 42px; /* Установите размер текста 42px */
-  font-weight: 700; /* Установите жирный шрифт */
-  line-height: normal; /* Используйте стандартный межстрочный интервал */
-  margin-bottom: 32px; /* Добавьте внешний отступ снизу 32px */
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: brown;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
-.service-text {
-  display: flex; /* Используйте flex для размещения текста */
-  justify-content: center; /* Выровняйте текст по центру */
+.title.red {
+    color: #d32f2f;
+    border: 3px solid #d32f2f;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5px;
 }
 
-.service-article {
-  text-align: center; /* Выравнивание текста по центру */
-  color: #fff; /* Установите белый цвет текста */
-  font-size: 16px; /* Установите размер текста 16px */
-  font-weight: 400; /* Установите нормальный вес шрифта */
-  line-height: 26px; /* Установите межстрочный интервал 26px (162.5%) */
-  margin-bottom: 40px; /* Добавьте внешний отступ снизу 40px */
+.title.yellow {
+    color: brown;
+    border: 3px solid brown;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5px;
 }
 
-.service-items {
-  display: flex; /* Используйте flex для размещения элементов */
-  justify-content: center; /* Выровняйте элементы по центру */
-  gap: 30px; /* Добавьте промежуток между элементами 30px */
+.flag {
+    width: 100px;
+    height: auto;
+    margin: 10px auto;
 }
 
-.service-item {
-  display: flex; /* Используйте flex для размещения содержимого */
-  flex-direction: column; /* Разместите элементы в колонку */
-  align-items: center; /* Выровняйте элементы по центру */
-  justify-content: center; /* Выровняйте элементы по вертикали */
-  border-radius: 34px; /* Добавьте радиус скругления 34px */
-  border: 1px solid var(--Bg-2, rgba(255, 255, 255, 0.08)); /* Установите прозрачную границу */
-  background: linear-gradient(
-    268deg,
-    rgba(254, 254, 255, 0.03) -11.04%,
-    rgba(255, 255, 255, 0.02) 104.89%
-  ); /* Установите градиентный фон */
-  box-shadow: 0px 22px 18px 0px rgba(0, 0, 0, 0.05); /* Добавьте тень к элементу */
-  padding: 20px 40px; /* Добавьте внутренние отступы 20px сверху и снизу, 40px по бокам */
+p {
+    font-size: 16px;
+    color: brown;
+    flex-grow: 1; /* Чтобы текст равномерно заполнял карточку */
 }
 
-.service-item-icon {
-  margin-bottom: 18px; /* Добавьте внешний отступ снизу 18px */
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+    text-align: left;
+    flex-grow: 1;
 }
 
-.service-item-title {
-  margin-bottom: 18px; /* Добавьте внешний отступ снизу 18px */
-  color: #fff; /* Установите белый цвет текста */
-  font-size: 24px; /* Установите размер текста 24px */
-  font-weight: 500; /* Установите полужирный шрифт */
-  line-height: normal; /* Используйте стандартный межстрочный интервал */
+ul li {
+    font-size: 16px;
+    color: brown;
+    margin: 5px 0;
 }
 
-.service-item-article {
-  margin-bottom: 24px; /* Добавьте внешний отступ снизу 24px */
-  color: #fff; /* Установите белый цвет текста */
-  font-size: 16px; /* Установите размер текста 16px */
-  font-weight: 400; /* Установите нормальный вес шрифта */
-  line-height: 26px; /* Установите межстрочный интервал 26px (162.5%) */
-  text-align: start; /* Выравнивание текста по началу строки */
+.finland-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f5e9d5;
+    border-radius: 10px;
+    text-align: left;
 }
 
-.service-item-link {
-  display: flex; /* Используйте flex для размещения содержимого ссылки */
-  text-decoration: none; /* Уберите подчеркивание текста */
+.finland-section h2 {
+    text-align: center;
+    color: brown;
 }
 
-.service-item-link span {
-  color: #fff; /* Установите белый цвет текста */
-  margin-right: 8px; /* Добавьте отступ справа 8px */
+.finland-section img {
+    display: block;
+    margin: auto;
+    width: 60px;
+}
+
+.finland-section ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+.finland-section li {
+    margin-bottom: 8px;
+    color: brown;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: brown;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.flag img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    color: brown;
+    margin-top: 10px;
+}
+
+.content {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.content h2 {
+    font-size: 24px;
+    color: brown;
+}
+
+.content p {
+    font-size: 18px;
+    color: brown;
+}
+
+.content ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.content ul li {
+    font-size: 18px;
+    color: brown;
+    margin: 5px 0;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: brown;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.flag img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+        
+        
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #d32f2f;
+    
+}
+
+.flag img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #d32f2f;
+    margin-top: 10px;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    display: inline-block;
+    border: 3px solid #d32f2f;
+    border-radius: 5px;
+}
+
+.content {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.content h2 {
+    font-size: 24px;
+    color: brown;
+    text-align: center;
+}
+
+.content p {
+    font-size: 18px;
+    color: brown;
+}
+
+.content ul {
+    list-style-type: square;
+    margin-left: 20px;
+    font-size: 18px;
+    color: brown;
+}
+
+.content ul li {
+    margin: 5px 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.section {
+    background: white;
+    margin: 1%;
+    margin-right: 1%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: 0px solid #ff0303;
+    width: 250px;
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: brown;
+    text-transform: uppercase;
+}
+
+.title.red {
+    color: #d32f2f;
+    border: 3px solid #d32f2f;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.title.yellow {
+    color: brown;
+    border: 3px solid brown;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.flag {
+    width: 100px;
+    height: auto;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 16px;
+    color: brown;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+    text-align: left;
+}
+
+ul li {
+    font-size: 16px;
+    color: brown;
+    margin: 5px 0;
+}
+
+.button-section {
+    margin-top: 20px;
+   
+}
+
+.survey-button {
+    display: inline-block;
+    background-color: #b22222;
+    color: white    ;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.survey-button:hover {
+    background-color: #8b0000;
+   
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid brown;
+    width: 250px;
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: brown;
+    text-transform: uppercase;
+}
+
+.title.red {
+    color: #d32f2f;
+    border: 3px solid #d32f2f;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.title.yellow {
+    color: brown;
+    border: 3px solid brown;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.flag {
+    width: 100px;
+    height: auto;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 16px;
+    color: brown;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+    text-align: left;
+}
+
+ul li {
+    font-size: 16px;
+    color: brown;
+    margin: 5px 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid brown;
+    width: 280px; /* Фиксированная ширина */
+    min-height: 500px; /* Фиксированная высота для выравнивания */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: brown;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.title.red {
+    color: #d32f2f;
+    border: 3px solid #d32f2f;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.title.yellow {
+    color: brown;
+    border: 3px solid brown;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.flag {
+    width: 100px;
+    height: auto;
+    margin: 10px auto;
+}
+
+p {
+    font-size: 16px;
+    color: brown;
+    flex-grow: 1; /* Чтобы текст равномерно заполнял карточку */
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+    text-align: left;
+    flex-grow: 1;
+}
+
+ul li {
+    font-size: 16px;
+    color: brown;
+    margin: 5px 0;
 }
